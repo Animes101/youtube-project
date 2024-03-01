@@ -27,7 +27,7 @@
               </a>
             </div>
             <div class="navbar-center hidden lg:flex">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Sort by view</button>
+                <button id="sort-button"  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Sort by view</button>
             </div>
             <div class="navbar-end">
               <a class="btn bg-red-400 text-white hover:text-black">Blog</a>
@@ -43,20 +43,11 @@
                   </div>
             </div>
             <!--video-->
-            <div class="grid grid-cols-2 md:grid-cols-3">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <div class="card-title">
-                        <img src="img/Icon.png" alt="">
-                        <h2>Building a Winning UX Strategy Using the Kano Model</h2>
-
-
-                      </div>
-                      <p>Awlad Hossain <span>i</span></p>
-                      <h2>91K views</h2>
-                    </div>
-                  </div>
+            <div id="not-Video" class="hidden">
+                <img class="w-[300px] block mx-auto py-5" src="img/Icon.png" alt="icon">
+                <p class="text-center text-red-500 text-lg">Oops!! Sorry, There is no content here</p>
+            </div>
+            <div id="card-container" class="grid gap-3 grid-cols-2 md:grid-cols-3 py-4">
             </div>
         </section>
 
